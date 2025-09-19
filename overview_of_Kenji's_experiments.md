@@ -17,3 +17,14 @@
 
 
 diff -ur cj788 cj345
+find that
+```
+  -um_sources=branches/pkg/Share/vn10.7_CMIP6_production_mods@43043 branches/dev/kenjiizumi/vn10.7_orbital_21k
+  +um_sources=branches/pkg/Share/vn10.7_CMIP6_production_mods@43043
+```
+the pathes in fact means the codes stored in the repository: **fcm:um.xm**
+```
+fcm ls fcm:um.xm/branches/dev/kenjiizumi/vn10.7_orbital_21k
+```
+
+
