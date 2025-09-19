@@ -26,5 +26,8 @@ the pathes in fact means the codes stored in the repository: **fcm:um.xm**
 ```
 fcm ls fcm:um.xm/branches/dev/kenjiizumi/vn10.7_orbital_21k
 ```
+checkout it by fcm co fcm:um.xm/branches/dev/kenjiizumi/vn10.7_orbital_21k
+the next step is to compare these two resource directory.
+
 
 
