@@ -3,7 +3,7 @@
 # From PI to LGM
 | suite-id | years     | comment                                   | site |
 | -------- | --------- | ----------------------------------------- |------|
-| cb392  | - | N96ORCA1 PI Control for testing ice-berg input data |MetO-Cray|
+| bm847  | - | HadGEM3-GC3.1 N96ORCA1 PI Control for CMIP6 |MetO-Cray|
 | by975  | - | PI Control for CMIP6 WITH LGM orbits and CO2 |MetO-Cray|
 | bz669  | - | PI LSM, LGM GHGs, orbit & icesheets |MetO-Cray|
 | bz669  | - | PI LSM, LGM GHGs, orbit & icesheets |MetO-Cray|
