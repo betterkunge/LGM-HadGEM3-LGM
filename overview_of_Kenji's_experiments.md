@@ -13,6 +13,7 @@
 | cq703  | - | the most stable simulation for the LGM,This suite is based on nearly the LGM boundary condition, but the Southern Hemisphere (S60-S90) uses a modern land-sea mask with LGM topography because the LGM model errors originated from the Southern Ocean (very close to Antarctica). from cj841|archer2|
 | cj986  | - | full LGM simulation for CMIP6-PMIP4. v1 from cj841 |archer2|
 | co328  | - | full LGM simulation, crashed every 2-5 years from cj986|archer2|
+| cv921  | - | HadGEM3-GC3.1 N96ORCA1 - the LGM full simulation for CMIP6-PMIP4. v7，modified based on cq703 | archer2 |
 | db646  | - | HadGEM3-GC3.1 - the LGM simulation with the ozone remapping scheme after ARCHER2 OS upgrade |archer2|
 
 
@@ -29,5 +30,6 @@ fcm ls fcm:um.xm/branches/dev/kenjiizumi/vn10.7_orbital_21k
 checkout it by fcm co fcm:um.xm/branches/dev/kenjiizumi/vn10.7_orbital_21k
 the next step is to compare these two resource directory.
 
-
+## My test ##
+u-ds929: copy of u-cv921
 
