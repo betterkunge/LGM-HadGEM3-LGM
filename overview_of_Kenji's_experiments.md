@@ -33,3 +33,62 @@ the next step is to compare these two resource directory.
 ## My test ##
 u-ds929: copy of u-cv921
 
+we carefully compared cv921 and cj345.
+We found that the boundary condition of cv921 are modified into a LGM style. 
+```
+--- /work/y07/shared/umshared/ancil/data/ancil_versions/n96e_orca1/GA7.1/v2/ancils      2017-10-02 11:10:18.000000000 +0100
++++ /work/n02/n02/kizumi/ancils/um_ancils_PILGM4        2022-09-09 14:14:45.000000000 +0100
+@@ -7,6 +7,7 @@
+
+ # File containing filenames version file
+ UM_ANCIL_FILENAMES=${UM_ANCIL_FILENAMES:-$UMDIR/ancil/data/ancil_versions/filenames/v9/ancils}
++#UM_ANCIL_FILENAMES=/work/n02/n02/kizumi/ancils/ancils_version_info
+
+ # Source in filenames
+ . $UM_ANCIL_FILENAMES
+@@ -19,17 +20,41 @@
+ export UM_ANCIL_DIR=$UM_ANCIL_N96EDIR
+ export UM_ANCIL_OCEANDIR=$UM_ANCIL_N96EORCA1DIR
+
+-export UM_ANCIL_MASK_DIR=$UM_ANCIL_N96EORCA1DIR/land_sea_mask/etop01/v2
+-export UM_ANCIL_OROG_DIR=$UM_ANCIL_N96EORCA1DIR/orography/globe30/v6
+-export UM_ANCIL_SST_DIR=$UM_ANCIL_N96EORCA1DIR/sst/reynolds/1981_2012_360/v3
+-export UM_ANCIL_SEAICE_DIR=$UM_ANCIL_N96EORCA1DIR/seaice/reynolds/1981_2012_360/v4
+-
+-export UM_ANCIL_SOILDUST_DIR=$UM_ANCIL_N96EORCA1DIR/soil_dust/hwsd/v4
+-export UM_ANCIL_SOIL_DIR=$UM_ANCIL_N96EORCA1DIR/soil_parameters/hwsd_vg/v4
+-
+-export UM_ANCIL_VEGFRAC_DIR=$UM_ANCIL_N96EORCA1DIR/vegetation/fractions_igbp/v4
+-export UM_ANCIL_VEGFUNC_DIR=$UM_ANCIL_N96EORCA1DIR/vegetation/func_type_modis/v4
+-export UM_ANCIL_OZONE_DIR=$UM_ANCIL_N96EDIR/ozone/sparc/1994-2005/v3
++#export UM_ANCIL_MASK_DIR=$UM_ANCIL_N96EORCA1DIR/land_sea_mask/etop01/v2
++export UM_ANCIL_MASK_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/land_sea_mask/etop01/PILGM4
++
++#export UM_ANCIL_OROG_DIR=$UM_ANCIL_N96EORCA1DIR/orography/globe30/v6
++export UM_ANCIL_OROG_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/orography/globe30/PILGM4
++
++#export UM_ANCIL_SST_DIR=$UM_ANCIL_N96EORCA1DIR/sst/reynolds/1981_2012_360/v3
++export UM_ANCIL_SST_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/sst/PILGM4
++
++#export UM_ANCIL_SEAICE_DIR=$UM_ANCIL_N96EORCA1DIR/seaice/reynolds/1981_2012_360/v4
++export UM_ANCIL_SEAICE_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/seaice/PILGM4
++
++#export UM_ANCIL_SOILDUST_DIR=$UM_ANCIL_N96EORCA1DIR/soil_dust/hwsd/v4
++export UM_ANCIL_SOILDUST_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/soil_dust/PILGM4
++
++#export UM_ANCIL_SOIL_DIR=$UM_ANCIL_N96EORCA1DIR/soil_parameters/hwsd_vg/v4
++#export UM_ANCIL_SOIL_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/soil_parameters/PILGM4
++export UM_ANCIL_SOIL_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_PI/soil_parameters/hwsd_vg/PILGM4
++
++#export UM_ANCIL_VEGFRAC_DIR=$UM_ANCIL_N96EORCA1DIR/vegetation/fractions_igbp/v4
++#export UM_ANCIL_VEGFRAC_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/vegetation/fractions_igbp/PILGM4
++export UM_ANCIL_VEGFRAC_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_PI/vegetation/fractions_igbp/PILGM4
++
++#export UM_ANCIL_VEGFUNC_DIR=$UM_ANCIL_N96EORCA1DIR/vegetation/func_type_modis/v4
++#export UM_ANCIL_VEGFUNC_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/vegetation/func_type_modis/PILGM4
++export UM_ANCIL_VEGFUNC_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_PI/vegetation/func_type_modis/PILGM4
++
++#export UM_ANCIL_OZONE_DIR=$UM_ANCIL_N96EDIR/ozone/sparc/1994-2005/v3
++export UM_ANCIL_OZONE_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/ozone/sparc/1994-2005/LGM
+```
+
