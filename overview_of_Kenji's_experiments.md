@@ -91,4 +91,8 @@ We found that the boundary condition of cv921 are modified into a LGM style.
 +#export UM_ANCIL_OZONE_DIR=$UM_ANCIL_N96EDIR/ozone/sparc/1994-2005/v3
 +export UM_ANCIL_OZONE_DIR=/work/n02/n02/kizumi/projects/n96e_orca/n96e_orca1_go6/ozone/sparc/1994-2005/LGM
 ```
+### Coupling weights
+As mentioned in hadgem3-eocene/Eocene configuration.md, in the set of Eocene suites, the coupling weights (`coupled > env > RMP_DIR` in the rose editor) was changed to a new one building by Seb. However, this process wasn't done in all the suites of Kenji. Why this step was ignored in the setting of LGM configuration?
+**waiting for Charlie's response**
+
 
